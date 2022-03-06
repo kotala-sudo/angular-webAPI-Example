@@ -1,0 +1,17 @@
+<div class="container">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+    consequuntur deserunt. Earum, voluptates inventore maiores sit aperiam, non
+    voluptatibus nemo, ad pariatur ipsam suscipit temporibus quasi corrupti.
+    Vero, esse corporis!
+  </p>
+
+  <div class="container" *ngFor="let post of posts">
+    <h1>{{ post.title }}</h1>
+    <h2>{{ post.body }}</h2>
+    <hr />
+  </div>
+
+  <button (click)="loadPosts()">Click Me!</button>
+  <button (click)="createPosts()">Post Me!</button>
+</div>
